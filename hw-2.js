@@ -1,3 +1,4 @@
+//with includesCI you can check string in array.
 Array.prototype.includesCI = function (textval) {
     const textvalue = textval.toLowerCase()
     function copy (item) {

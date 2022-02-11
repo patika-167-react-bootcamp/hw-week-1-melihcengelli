@@ -59,6 +59,10 @@ const filecheck = function () {
         
     }
 }
+
+ /* MOVE FUNCTION START */
+
+
 /* Function moves items which we wrotes file ID as moveID to target folder ID which we wrote as targetFolderID. */
 const move = function (moveID,targetFolderID){
     if (typeof moveID === 'number') {
@@ -115,10 +119,13 @@ const move = function (moveID,targetFolderID){
 
     
 }
-
+/* MOVE FUNCTION END */
 
 /* Function copy files to where we want to move files. First input is which
  file moves and second input is new folder location. */
+
+  /* COPY FUNCTION START */
+
 const copy = function (copyID,targetFolderID) {
     if (typeof copyID === 'number') {
         filecheck()
@@ -171,9 +178,14 @@ const copy = function (copyID,targetFolderID) {
         console.log("input is not a number. try again.")
     }
 }
+ /* COPY FUNCTION END */
+
 
 /* Function removes file which we want. Searches all folders,
  if function finds equal ID number to input ID, removes file. */
+
+  /* REMOVE FUNCTION START */
+
 const remove = function (removeID){
     if (typeof removeID === 'number') {
         filecheck()
@@ -211,8 +223,12 @@ const remove = function (removeID){
     }
     
 }
+ /* REMOVE FUNCTION END */
+
 
 /* If function finds equal folder as your input ID, removes all files under ID. */
+
+ /* REMOVE FOLDER FUNCTION START */
 const removeFolder = function (removeFolderID) {
     if (typeof removeFolderID === 'number') {
         filecheck()
@@ -244,7 +260,13 @@ const removeFolder = function (removeFolderID) {
         console.log("input is not a number. try again.")
     }
 }
+ /* REMOVE FOLDER FUNCTION START */
+
+
+
 /* Function returns folder ID. */
+
+ /* PARENT FOLDER OF FUNCTION START */
 const parentFolderOf = function (filesID) {
     if (typeof filesID === 'number') {
         filecheck()
@@ -278,4 +300,5 @@ const parentFolderOf = function (filesID) {
     }
     
 }
+ /* PARENT FOLDER OF FUNCTION END */
 
